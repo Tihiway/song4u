@@ -1,3 +1,5 @@
-/**
- * Created by Milos on 15-Dec-16.
- */
+'use script'
+songApp.controller('SearchController',['$scope','LinksService',function ($scope,LinksService){
+
+
+}]);
