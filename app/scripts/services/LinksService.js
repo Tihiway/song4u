@@ -1,17 +1,13 @@
 'use strict'
 
-songApp.service('LinksService',function ($scope,$http)
+songApp.service('LinksService',function ($http)
 {
-   var self=this;
-   var songs=[];
+    var self = this;
+    var songs = [];
+    $http.get("app/api/getLinks.php").then(function (response) {
+        songs.push(response.data);
+    });
     self.getAllSongs = function(){
-
-        $http.get("GetLinks.php").then(function (response) {
-           songs.push(response.data);
-        });
-      }
-
-
-
-
+        return songs;
+        };
 });

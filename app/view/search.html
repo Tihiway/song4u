@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Results</title>
-</head>
-<body>
-Neki rezultati
-</body>
-</html>
+<div>Results</div>
+<div ng-repeat="for link in links">
+
+    <div class="row">
+        <div class="col-xs-6">
+            {{link.id}} <strong> {{link.name}}</strong>
+        </div>
+    </div>
+    <hr>
+</div>
